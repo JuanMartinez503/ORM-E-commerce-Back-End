@@ -4,6 +4,7 @@ const { Tag, Product, ProductTag } = require("../../models");
 // The `/api/tags` endpoint
 
 router.get("/", async (req, res) => {
+  //this gets all of the tags
   // find all tags
   try {
     const tagsData = await Tag.findAll({
@@ -71,6 +72,7 @@ router.delete("/:id", async (req, res) => {
       },
     });
     if (!tagsData) {
+      //if there is no id found a message will pop out
       res.status(404).json({ message: "No tag found with this id!" });
     } else {
       res.status(200).json(tagsData);
