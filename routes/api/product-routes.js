@@ -8,6 +8,7 @@ router.get('/', async (req, res) => {
   try {
     const productsData = await Product.findAll({
       include: [{ model: Category }, { model: Tag, through: ProductTag, as:'products' }],
+      //this is where the models are connected
     });
     res.status(200).json(productsData);
   } catch (err) {

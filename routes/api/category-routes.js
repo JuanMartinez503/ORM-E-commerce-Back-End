@@ -25,8 +25,9 @@ router.get("/:id", async (req, res) => {
     });
     if (!categoryData) {
       res.status(404).json({ message: "No category with this id was found!" });
+    } else {
+      res.status(200).json(categoryData);
     }
-    res.status(200).json(categoryData);
   } catch (err) {
     res.status(500).json(err);
   }
@@ -53,8 +54,9 @@ router.put("/:id", async (req, res) => {
     });
     if (!categoryData[0]) {
       res.status(404).json({ message: "No location found with this id!" });
+    } else {
+      res.status(200).json(categoryData);
     }
-    res.status(200).json(categoryData);
   } catch (err) {
     res.status(500).json(err);
   }
@@ -71,8 +73,9 @@ router.delete("/:id", async (req, res) => {
 
     if (!categoryData) {
       res.status(404).json({ message: "No location found with this id!" });
+    } else {
+      res.status(200).json(categoryData);
     }
-    res.status(200).json(categoryData);
   } catch (err) {
     res.status(500).json(err);
   }

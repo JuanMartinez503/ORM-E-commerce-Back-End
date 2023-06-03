@@ -6,6 +6,7 @@ class ProductTag extends Model {}
 
 ProductTag.init(
   {
+    //creates tags and references other tables
     id:{
       type:DataTypes.INTEGER,
       allowNull:false,

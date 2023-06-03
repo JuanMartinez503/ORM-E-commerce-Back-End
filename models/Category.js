@@ -6,6 +6,7 @@ class Category extends Model {}
 
 Category.init(
   {
+    //creates the tables that is used to get the category information
     id: {
       type: DataTypes.INTEGER,
       allowNull: false,

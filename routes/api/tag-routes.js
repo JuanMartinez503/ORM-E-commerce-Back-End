@@ -24,9 +24,9 @@ router.get("/:id", async (req, res) => {
     });
     if (!tagsData) {
       res.status(404).json({ message: "No tag found with this id!" });
+    } else {
+      res.status(200).json(tagsData);
     }
-    // be sure to include its associated Product data
-    res.status(200).json(tagsData);
   } catch (err) {
     res.status(500).json(err);
   }
@@ -54,9 +54,9 @@ router.put("/:id", async (req, res) => {
     });
     if (!tagsData[0]) {
       res.status(404).json({ message: "No tag found with this id!" });
+    } else {
+      res.status(200).json(tagsData);
     }
-
-    res.status(200).json(tagsData);
   } catch (err) {
     res.status(500).json(err);
   }
@@ -72,8 +72,9 @@ router.delete("/:id", async (req, res) => {
     });
     if (!tagsData) {
       res.status(404).json({ message: "No tag found with this id!" });
+    } else {
+      res.status(200).json(tagsData);
     }
-    res.status(200).json(tagsData);
   } catch (err) {
     res.status(500).json(err);
   }
