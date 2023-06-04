@@ -1,7 +1,7 @@
 # Object-Relational Mapping (ORM): E-Commerce Back End
 
 ## Description
-- My task was to build the back end for an e-commerce site. I took a working Express.js API and configure it to use Sequelize to interact with a MYSQL database. I received the starter code from Xandromus on Github. The code uses Javascript and it runs in the backend.
+- My task was to build the back end of an e-commerce site. I took a working Express.js API and configure it to use Sequelize to interact with a MYSQL database. I received the starter code from Xandromus on Github The code uses Javascript and it runs in the backend.
 
 ## URL
 - [Live Video](https://drive.google.com/file/d/18QxwMu3RjQQYXwKPAoNDWteYOkbvhsyB/view)
