@@ -20,6 +20,7 @@ ProductTag.init(
         key: 'id'
       }
     },
+    //the table makes a reference to the tag table
     tag_id:{
       type:DataTypes.INTEGER,
       references:{

@@ -18,6 +18,7 @@ Category.hasMany(Product, {
 
 // Products belongToMany Tags (through ProductTag)
 Product.belongsToMany(Tag, {
+  //the tables below get linked 
   through: {
     model: ProductTag,
     unique: false,
@@ -33,7 +34,7 @@ Tag.belongsToMany(Product, {
   },
   as: 'tags_of_product',
 });
-
+//this is where the files get exported
 module.exports = {
   Product,
   Category,
